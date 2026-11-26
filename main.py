@@ -2,6 +2,7 @@ import sys, matplotlib.pyplot as plt, networkx as nx
 from matplotlib.patches import FancyArrowPatch
 
 # === Definición del DFA ===
+# cambio de estados: q0 --a--> q1, q1 --a--> q4, q1 --b--> q4, q2 --a--> q0, q2 --b--> q1, q3 --b--> q2, q4 --a--> q4, q4 --b--> q4
 states = {"q0","q1","q2","q3","q4"}
 alphabet = {"a","b"}
 delta = {("q0","a"):"q1", 
